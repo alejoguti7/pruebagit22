@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\estilos.css">
+    <title>Reseñas</title>
+</head>
+<body class="body_votar">
+    <section class="sec_votar">
+        <h1>Reseñas</h1>
+        <br>
+        <form class="forma" action="forma">
+            <label class="label_votar" for="nom_peli">Nombre Pelicula: </label>
+            <select class="form_votar option" name="sl_nom_peli" id="sl_nom_peli">
+                <option value="select" disabled selected>Seleccione una pelicula</option>
+                <option value="300">300</option>
+                <option value="joker">Joker</option>
+                <option value="avatar">Avatar</option>
+                <option value="crash">Crash</option>
+                <option value="interstellar">interstellar</option>
+                <option value="mad_max">Mad Max</option>
+                <option value="the_curious_case_of_benjamin_button">The Curious Case Of Benjamin Button</option>
+                <option value="the_wolf_of_wall_street">The Wolf Of Wall Street</option>
+                <option value="the_dark_knight">The Dark Knight</option>
+            </select>
+            <label class="label_votar" for="votar">Votación: </label>
+            <select class="form_votar option" name="sl_votar" id="sl_votar">
+                <option value="select" disabled selected>Selección</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label class="label_votar" for="user">Usuario: </label>
+            <input class="form_votar user" type="text" name="user" id="user" required>
+            <label class="label_votar" for="coment">Reseña: </label>
+            <textarea class="form_votar area" name="resena" id="resena" cols="40" rows="5"></textarea>
+            <div class="btn_votar_div">
+                <input class="btn_votar" type="submit" value="Enviar" name="Enviar">
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>
